@@ -1,7 +1,7 @@
 package service.api;
 
 /**
- * 各サービス共通のことを定義するインターフェースです。
+ * 各サービス共通のルールを定義するインターフェースです。
  *
  * @author HyungCheol Kim
  */
