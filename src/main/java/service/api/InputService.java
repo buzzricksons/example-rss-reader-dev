@@ -1,5 +1,7 @@
 package service.api;
 
+import java.util.List;
+
 /**
  * RSSのURLを持っているクラスです。
  *
@@ -19,5 +21,5 @@ public interface InputService extends AbstractService {
      * @param url 入力したURL
      * @return URLのリスト
      */
-    String url(String url);
+    List<String> url(String url);
 }

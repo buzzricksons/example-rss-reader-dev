@@ -3,6 +3,8 @@ package service.api.impl;
 import lombok.NonNull;
 import service.api.InputService;
 
+import java.util.List;
+
 /**
  * {@link InputService}のデフォルト実装です。
  *
@@ -20,7 +22,7 @@ public class InputServiceImplDefault implements InputService {
      * @return
      */
     @Override
-    public String url(@NonNull String url) {
-        return url;
+    public List<String> url(@NonNull String url) {
+        return List.of(url);
     }
 }

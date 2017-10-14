@@ -18,6 +18,7 @@ public class PrintServiceImplDefault implements PrintService {
     @Override
     public boolean print(@NonNull String rssFeed) {
         System.out.println(rssFeed);
+        System.out.println("出力終了しました。");
         return Boolean.TRUE;
     }
 }
