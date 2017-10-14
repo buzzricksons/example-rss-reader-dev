@@ -4,22 +4,23 @@ Rootディレクトリの`成果物`フォルダーに入っています。
 
 # 仕様
 入力されたURLからRSS Feedを取得して加工した後、出力します。
-- 複数のRSS FEEDのURL入力が可能です。
-- RSS FEEDは標準出力とTextファイルの保存、両方実行されます。
+* 複数のRSS FEEDのURL入力が可能です。
+* RSS FEEDは標準出力とTextファイルの保存、両方実行されます。
 
 # 開発者マニュアル
 ## jarファイルの作成
 Mavenで下記のコマンドを実行するとjarファイルが作られます。
-```$txt
+```
 clean compile assembly:single
 ```
 build成果物は`kim-rss-reader-1.0.0-SNAPSHOT-jar-with-dependencies`のファイル名で生成されます。
 ※build途中lombokによるエラーが起きますが、成果物は作成されます。
 
 ## jarファイルの実行
-```$xslt
+```
 $ java -jar kim-rss-reader-1.0.0-SNAPSHOT-jar-with-dependencies
 ```
+
 ## DI(Dependency Injection)
 * [ServiceLoader](https://docs.oracle.com/javase/6/docs/api/java/util/ServiceLoader.html)を利用して実装されています。
 * 拡張可能な5種類のインタフェースがあります。
