@@ -1,13 +1,11 @@
 package service.api;
 
-import java.util.List;
-
 /**
  * RSSのURLを持っているクラスです。
  *
  * @author HyungCheol Kim
  */
-public interface InputService {
+public interface InputService extends AbstractService {
     /**
      * URLを入力する時、表示されるメッセージです。
      *

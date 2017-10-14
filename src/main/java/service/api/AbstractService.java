@@ -1,36 +1,29 @@
 package service.api;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.ServiceLoader;
-
+/**
+ * 各サービス共通のことを定義するインターフェースです。
+ *
+ * @author HyungCheol Kim
+ */
 public interface AbstractService {
+    /**
+     * サービスごとのDIルールをで定義します。
+     * デフォルトは一つのDIのみ利用可能というルールです。
+     *
+     * @return 一つのみのDIの場合は {@link DIPolicy#SINGLE}、複数のDIの場合は {@link DIPolicy#MULTIPLE}
+     */
     default DIPolicy diPolicy() {
         return DIPolicy.SINGLE;
     }
 
-
     public enum DIPolicy {
+        /**
+         * 一つのみのDIが利用可能です。
+         */
         SINGLE,
+        /**
+         * 複数のDIが利用可能です。
+         */
         MULTIPLE
-    }
-
-    public static <T> T loadService(Class<T> api) {
-
-        List<T> result = new ArrayList<>();
-
-
-        ServiceLoader<T> impl = ServiceLoader.load(api);
-
-        for (T loadedImpl : impl) {
-            result.add(loadedImpl);
-        }
-
-        if (result.isEmpty()) {
-            throw new RuntimeException("実装されているクラスが存在しません: " + api);
-        }
-
-        return result.get(0);
-
     }
 }

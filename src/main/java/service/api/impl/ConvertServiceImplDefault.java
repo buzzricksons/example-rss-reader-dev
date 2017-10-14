@@ -1,12 +1,24 @@
 package service.api.impl;
 
 import lombok.NonNull;
-import service.api.AbstractService;
 import service.api.ConvertService;
 
-public class ConvertServiceImplDefault implements ConvertService, AbstractService {
+/**
+ * {@link ConvertService}のデフォルト実装です。
+ *
+ * @author HyungCheol Kim
+ *
+ */
+public class ConvertServiceImplDefault implements ConvertService {
+    private final String TARGET = "NewsPicks";
+    /**
+     * この実装では {@link #TARGET}を取り除く処理を行います。
+     *
+     * @param rssFeed RSS Feed
+     * @return {@link #TARGET}を取り除いたRSS Feed
+     */
     @Override
     public String convert(@NonNull String rssFeed) {
-        return rssFeed.replace("NewsPicks","");
+        return rssFeed.replace(TARGET,"");
     }
 }

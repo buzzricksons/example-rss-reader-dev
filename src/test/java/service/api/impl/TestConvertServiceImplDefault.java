@@ -12,20 +12,19 @@ public class TestConvertServiceImplDefault {
     private final ConvertService convertService = new ConvertServiceImplDefault();
 
     @Test
-    @DisplayName("RSS Feed内容のがうまく置き換えできない場合")
+    @DisplayName("RSS Feed内容のがうまく置き換えできない場合1")
     public void testConvert00() {
         assertEquals("",convertService.convert("NewsPicks"), () -> "うまく変更できませんでした。");
-
     }
 
     @Test
-    @DisplayName("RSS Feed内容のがうまく置き換えできない場合")
+    @DisplayName("RSS Feed内容のがうまく置き換えできない場合2")
     public void testConvert01() {
         assertEquals("",convertService.convert(""), () -> "うまく変更できませんでした。");
     }
 
     @Test
-    @DisplayName("RSS Feed内容のがうまく置き換えできない場合")
+    @DisplayName("RSS Feed内容のがうまく置き換えできない場合3")
     public void testConvert02() {
         assertEquals("newsPicks",convertService.convert("newsPicks"), () -> "うまく変更できませんでした。");
     }
