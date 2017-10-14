@@ -37,7 +37,7 @@ public class AcquireServiceImplDefault implements AcquireService {
             String content = EntityUtils.toString(entity);
             return content;
         } catch (IOException e) {
-            e.printStackTrace();
+//            e.printStackTrace();
         }
         throw new RssNotFoundedException("RSS Feedの取得に失敗しました。");
     }

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>service.api.impl.AcquireServiceImplDefault</OriginalElement>
+  <nodes>
+    <node x="1277.0" y="318.5">service.api.impl.PrintServiceImplToTextFile</node>
+    <node x="1953.0" y="307.5">service.api.impl.InputServiceImplMultiple</node>
+    <node x="941.5000000000001" y="0.0">service.api.AbstractService</node>
+    <node x="0.0" y="162.0">service.api.AcquireService</node>
+    <node x="1723.0" y="307.5">service.api.impl.InputServiceImplDefault</node>
+    <node x="1506.0" y="318.5">service.api.impl.PrintServiceImplDefault</node>
+    <node x="1382.7609375" y="151.0">service.api.PrintService</node>
+    <node x="360.76093749999995" y="162.0">service.api.ConvertService</node>
+    <node x="367.5" y="11.0">java.lang.FunctionalInterface</node>
+    <node x="0.0" y="318.5">service.api.impl.AcquireServiceImplDefault</node>
+    <node x="725.0" y="274.0">service.operation.impl.OperatorImpl2ndPhase</node>
+    <node x="880.6765625" y="162.0">service.operation.Operator</node>
+    <node x="495.0" y="307.0">service.api.impl.ConvertServiceImplDefault</node>
+    <node x="1826.0109375" y="151.0">service.api.InputService</node>
+    <node x="247.0" y="318.5">service.api.impl.ConvertServiceImplUnEscape</node>
+    <node x="1001.0" y="274.0">service.operation.impl.OperatorImplDefaultProxy</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="service.api.PrintService" target="service.api.AbstractService">
+      <point x="49.25" y="-36.5" />
+      <point x="1530.5109375" y="81.0" />
+      <point x="1065.4" y="81.0" />
+      <point x="35.40000000000009" y="25.5" />
+    </edge>
+    <edge source="service.api.impl.PrintServiceImplDefault" target="service.api.PrintService">
+      <point x="0.0" y="-25.5" />
+      <point x="1604.5" y="249.0" />
+      <point x="1530.5109375" y="249.0" />
+      <point x="49.25" y="36.5" />
+    </edge>
+    <edge source="service.api.impl.PrintServiceImplToTextFile" target="service.api.PrintService">
+      <point x="0.0" y="-25.5" />
+      <point x="1381.5" y="249.0" />
+      <point x="1432.0109375" y="249.0" />
+      <point x="-49.25" y="36.5" />
+    </edge>
+    <edge source="service.api.AcquireService" target="service.api.AbstractService">
+      <point x="56.75" y="-25.5" />
+      <point x="170.25" y="111.0" />
+      <point x="959.2000000000002" y="111.0" />
+      <point x="-70.79999999999995" y="25.5" />
+    </edge>
+    <edge source="service.operation.impl.OperatorImplDefaultProxy" target="service.operation.Operator">
+      <point x="0.0" y="-70.0" />
+      <point x="1129.0" y="249.0" />
+      <point x="997.6765625" y="249.0" />
+      <point x="39.0" y="25.5" />
+    </edge>
+    <edge source="service.api.impl.ConvertServiceImplUnEscape" target="service.api.ConvertService">
+      <point x="0.0" y="-25.5" />
+      <point x="361.0" y="249.0" />
+      <point x="411.51093749999995" y="249.0" />
+      <point x="-50.75" y="25.5" />
+    </edge>
+    <edge source="service.api.InputService" target="service.api.AbstractService">
+      <point x="0.0" y="-36.5" />
+      <point x="1931.0109375" y="71.0" />
+      <point x="1100.8000000000002" y="71.0" />
+      <point x="70.79999999999995" y="25.5" />
+    </edge>
+    <edge source="service.operation.impl.OperatorImpl2ndPhase" target="service.operation.Operator">
+      <point x="0.0" y="-70.0" />
+      <point x="853.0" y="249.0" />
+      <point x="919.6765625" y="249.0" />
+      <point x="-39.0" y="25.5" />
+    </edge>
+    <edge source="service.api.ConvertService" target="java.lang.FunctionalInterface">
+      <point x="-50.75" y="-25.5" />
+      <point x="411.51093749999995" y="101.0" />
+      <point x="429.75" y="101.0" />
+      <point x="-20.75" y="14.5" />
+    </edge>
+    <edge source="service.api.impl.ConvertServiceImplDefault" target="service.api.ConvertService">
+      <point x="0.0" y="-37.0" />
+      <point x="600.0" y="249.0" />
+      <point x="513.0109375" y="249.0" />
+      <point x="50.75" y="25.5" />
+    </edge>
+    <edge source="service.api.PrintService" target="java.lang.FunctionalInterface">
+      <point x="-49.25" y="-36.5" />
+      <point x="1432.0109375" y="91.0" />
+      <point x="512.75" y="91.0" />
+      <point x="62.25" y="14.5" />
+    </edge>
+    <edge source="service.api.AcquireService" target="java.lang.FunctionalInterface">
+      <point x="-56.75" y="-25.5" />
+      <point x="56.75" y="101.0" />
+      <point x="388.25" y="101.0" />
+      <point x="-62.25" y="14.5" />
+    </edge>
+    <edge source="service.api.impl.InputServiceImplMultiple" target="service.api.InputService">
+      <point x="0.0" y="-36.5" />
+      <point x="2058.0" y="249.0" />
+      <point x="1983.5109375" y="249.0" />
+      <point x="52.5" y="36.5" />
+    </edge>
+    <edge source="service.api.impl.InputServiceImplDefault" target="service.api.InputService">
+      <point x="0.0" y="-36.5" />
+      <point x="1828.0" y="249.0" />
+      <point x="1878.5109375" y="249.0" />
+      <point x="-52.5" y="36.5" />
+    </edge>
+    <edge source="service.operation.Operator" target="java.lang.FunctionalInterface">
+      <point x="-38.999999999999886" y="-25.5" />
+      <point x="919.6765625000003" y="101.0" />
+      <point x="471.25" y="101.0" />
+      <point x="20.75" y="14.5" />
+    </edge>
+    <edge source="service.operation.Operator" target="service.api.AbstractService">
+      <point x="39.000000000000114" y="-25.5" />
+      <point x="997.6765625000003" y="131.0" />
+      <point x="1030.0" y="131.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="service.api.impl.AcquireServiceImplDefault" target="service.api.AcquireService">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="service.api.ConvertService" target="service.api.AbstractService">
+      <point x="50.75" y="-25.5" />
+      <point x="513.0109375" y="121.0" />
+      <point x="994.6000000000001" y="121.0" />
+      <point x="-35.39999999999998" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7503435639028859" x="1081.5" y="207.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

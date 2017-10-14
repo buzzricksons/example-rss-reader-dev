@@ -14,14 +14,17 @@ public class TestInputServiceImplMultiple {
     @Test
     @DisplayName("入力したURLがうまく保存されない場合")
     public void testUrl00() {
-        assertEquals(2, inputService.url("https://news.google.com/news/rss/?ned=us&hl=en,https://news.google.com/news/rss/?ned=us&hl=en").size());
+        assertEquals(2
+                , inputService.url("https://news.google.com/news/rss/?ned=us&hl=en,https://news.google.com/news/rss/?ned=us&hl=en").size()
+                , () -> "正常に保存されませんでした。");
     }
 
     @Test
     @DisplayName("入力したURLがうまくparsingされない場合")
     public void testUrl01() {
         assertEquals("https://news.google.com/news/rss/?ned=us&hl=en"
-                , inputService.url("https://news.google.com/news/rss/?ned=us&hl=en,https://news.google.com/news/rss/?ned=us&hl=en").get(0));
+                , inputService.url("https://news.google.com/news/rss/?ned=us&hl=en,https://news.google.com/news/rss/?ned=us&hl=en").get(0)
+                , () -> "正常にparsingされませんでした。");
     }
 
     @Test

@@ -7,6 +7,11 @@ package service.api;
  */
 @FunctionalInterface
 public interface PrintService extends AbstractService {
+    @Override
+    default DIPolicy diPolicy() {
+        return DIPolicy.MULTIPLE;
+    }
+
     /**
      * RSS Feedを出力します。
      *
