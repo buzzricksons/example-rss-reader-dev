@@ -9,20 +9,25 @@
 - 拡張可能な5種類のインタフェースがあります。
 
 ## 拡張可能な5種類のインターフェース
-### InputService
+### 1.InputService
 URLの入力を行います。
+- `InputServiceImplDefault`: InputServiceのデフォルト実装です。
 
-### AcquireService
+### 2.AcquireService
 URLからRSS Feedを取得する処理を行います。
+- `AcquireServiceImplDefault`: AcquireServiceのデフォルト実装です。
 
-### ConvertService
+### 3.ConvertService
 RSS Feedの加工処理を行います。
+- `ConvertServiceImplDefault`: ConvertServiceのデフォルト実装です。
 
-### PrintService
+### 4.PrintService
 RSS Feedの出力を行います。
+- `PrintServiceImplDefault`: PrintServiceのデフォルト実装です。
 
-### Operator
+### 5.Operator
 RSS Readerアプリケーションの実行を行います。
+- `OperatorImplDefaultProxy`: Operatorのデフォルト実装です。
 
 ## DIの新規追加
 1. 5種類のDIの中で拡張するDIをimplementします。
