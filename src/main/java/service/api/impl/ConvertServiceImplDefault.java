@@ -10,7 +10,7 @@ import service.api.ConvertService;
  *
  */
 public class ConvertServiceImplDefault implements ConvertService {
-    private final String TARGET = "NewsPicks";
+    private final String TARGET = "<body>";
     /**
      * この実装では {@link #TARGET}を取り除く処理を行います。
      *
