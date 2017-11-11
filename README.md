@@ -63,7 +63,7 @@ RSS Readerアプリケーションの実行を行います。
 
 ## その他
 * JDK 9をインストールする必要があります。
-* lombokを利用するためIntelliJの場合は下記の設定が必要です。
+* lombokを利用するため,IntelliJの場合は下記の設定が必要です。
     * https://qiita.com/abetd/items/c586ca375fb1b9e4145a
 
 ***
