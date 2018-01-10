@@ -1,4 +1,4 @@
-**KIM RSS Reader**
+** Example RSS Reader**
 
 # 仕様
 入力されたURLからRSS Feedを取得して加工した後、出力します。
